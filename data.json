@@ -268,7 +268,7 @@
       "id": 1,
       "nom": "Aminata K.",
       "entreprise": "AK Cosmétiques",
-      "photo": "images/temoignages/aminata.jpg",
+      "photo": "https://i.pravatar.cc/150?img=1",
       "note": 5,
       "texte": "Excellente formation ! J'ai triplé mon chiffre d'affaires en 3 mois grâce aux stratégies apprises.",
       "produitId": 1
@@ -277,7 +277,7 @@
       "id": 2,
       "nom": "Ibrahim S.",
       "entreprise": "Tech Solutions",
-      "photo": "images/temoignages/ibrahim.jpg",
+      "photo": "https://i.pravatar.cc/150?img=1",
       "note": 5,
       "texte": "Le coaching m'a permis de structurer mon entreprise et d'atteindre mes objectifs plus rapidement.",
       "produitId": 2
@@ -286,7 +286,7 @@
       "id": 3,
       "nom": "Fatou D.",
       "entreprise": "Mode & Style",
-      "photo": "images/temoignages/fatou.jpg",
+      "photo": "https://i.pravatar.cc/150?img=1",
       "note": 5,
       "texte": "Site web magnifique et livré dans les délais. Équipe très professionnelle !",
       "produitId": 3
