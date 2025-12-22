@@ -1,247 +1,183 @@
 {
-    "entreprise": {
-        "nom": "Porte Bonheur",
-        "slogan": "Votre succès est notre mission",
-        "telephone": "+2250574404978",
-        "email": "bamorobusiness@gmail.com",
-        "adresse": "Abidjan, Côte d'Ivoire",
-        "logo": "https://via.placeholder.com/200x80/2563eb/ffffff?text=Porte+Bonheur",
-        "favicon": "images/favicon.ico",
-        "couleurs": {
-            "primaire": "#2563eb",
-            "secondaire": "#7c3aed",
-            "accent": "#f59e0b",
-            "texte": "#1f2937",
-            "fond": "#f9fafb"
-        },
-        "reseaux": {
-            "facebook": "",
-            "instagram": "",
-            "linkedin": ""
-        }
+  "entreprise": {
+    "nom": "Porte Bonheur",
+    "slogan": "Votre succès est notre mission",
+    "telephone": "+2250574404978",
+    "email": "bamorobusiness@gmail.com",
+    "adresse": "Abidjan, Côte d'Ivoire",
+    "logo": "https://via.placeholder.com/200x80/2563eb/ffffff?text=Porte+Bonheur",
+    "favicon": "images/favicon.ico",
+    "couleurs": {
+      "primaire": "#2563eb",
+      "secondaire": "#7c3aed",
+      "accent": "#f59e0b",
+      "texte": "#1f2937",
+      "fond": "#f9fafb"
     },
-    "whatsapp": {
-        "numero": "2250574404978",
-        "messageDefaut": "Bonjour, je suis intéressé par : "
-    },
-    "seo": {
-        "titre": "Porte Bonheur - Formations & Services Premium",
-        "description": "Découvrez nos formations professionnelles et services de coaching pour réussir votre business",
-        "motsCles": "formation, coaching, business, développement personnel, Abidjan"
-    },
-    "produits": [
-        {
-            "id": 1,
-            "actif": true,
-            "vedette": true,
-            "nom": "Formation Marketing Digital",
-            "slug": "formation-marketing-digital",
-            "categorie": "formations",
-            "prix": 150000,
-            "devise": "FCFA",
-            "reduction": 0,
-            "images": [
-                "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-                "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
-                "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
-            ],
-            "descriptionCourte": "Maîtrisez les stratégies du marketing digital en 8 semaines",
-            "descriptionComplete": "Cette formation complète vous permettra de devenir un expert du marketing digital. Vous apprendrez les techniques avancées de SEO, publicité Facebook/Instagram, email marketing et création de contenu viral. Formation 100% pratique avec études de cas réels.",
-            "avantages": [
-                "Certification professionnelle reconnue",
-                "8 semaines de formation intensive",
-                "Suivi personnalisé par un mentor",
-                "Accès à vie aux ressources",
-                "Groupe privé d'entraide"
-            ],
-            "caracteristiques": [
-                {
-                    "nom": "Durée",
-                    "valeur": "8 semaines"
-                },
-                {
-                    "nom": "Format",
-                    "valeur": "100% en ligne"
-                },
-                {
-                    "nom": "Niveau",
-                    "valeur": "Débutant à Intermédiaire"
-                },
-                {
-                    "nom": "Langue",
-                    "valeur": "Français"
-                },
-                {
-                    "nom": "Support",
-                    "valeur": "Vidéos + PDF + Exercices"
-                }
-            ],
-            "tags": [
-                "marketing",
-                "digital",
-                "formation",
-                "SEO",
-                "publicité"
-            ],
-            "messageWhatsapp": "Bonjour ! Je suis intéressé par la Formation Marketing Digital à 150 000 FCFA. Pouvez-vous me donner plus d'informations ?",
-            "produitsLies": [
-                2,
-                3
-            ],
-            "dateAjout": "2024-01-15",
-            "vues": 0,
-            "commandes": 0
-        },
-        {
-            "id": 2,
-            "actif": true,
-            "vedette": true,
-            "nom": "Coaching Business 1-to-1",
-            "slug": "coaching-business-1to1",
-            "categorie": "coaching",
-            "prix": 250000,
-            "devise": "FCFA",
-            "reduction": 10,
-            "images": [
-                "images/produits/coaching-1.jpg",
-                "images/produits/coaching-2.jpg"
-            ],
-            "descriptionCourte": "Accompagnement personnalisé pour développer votre entreprise",
-            "descriptionComplete": "Un accompagnement sur-mesure pour entrepreneurs ambitieux. En 12 sessions individuelles, nous travaillerons ensemble sur votre stratégie business, votre positionnement, votre offre et votre plan d'action. Résultats garantis ou remboursé.",
-            "avantages": [
-                "12 sessions individuelles de 90 minutes",
-                "Plan d'action personnalisé",
-                "Suivi par email illimité",
-                "Outils et templates exclusifs",
-                "Réseau d'entrepreneurs"
-            ],
-            "caracteristiques": [
-                {
-                    "nom": "Durée",
-                    "valeur": "3 mois"
-                },
-                {
-                    "nom": "Sessions",
-                    "valeur": "12 x 90 minutes"
-                },
-                {
-                    "nom": "Format",
-                    "valeur": "Visio ou présentiel"
-                },
-                {
-                    "nom": "Disponibilité",
-                    "valeur": "Support 7j/7"
-                }
-            ],
-            "tags": [
-                "coaching",
-                "business",
-                "entrepreneur",
-                "stratégie"
-            ],
-            "messageWhatsapp": "Bonjour ! Je souhaite en savoir plus sur le Coaching Business 1-to-1. Quand pouvons-nous planifier une première session ?",
-            "produitsLies": [
-                1,
-                4
-            ],
-            "dateAjout": "2024-01-20",
-            "vues": 0,
-            "commandes": 0
-        },
-        {
-            "id": 3,
-            "actif": true,
-            "vedette": true,
-            "nom": "Pack Création de Site Web",
-            "slug": "pack-creation-site-web",
-            "categorie": "services",
-            "prix": 500000,
-            "devise": "FCFA",
-            "reduction": 0,
-            "images": [
-                "images/produits/site-web-1.jpg"
-            ],
-            "descriptionCourte": "Site web professionnel clé en main en 15 jours",
-            "descriptionComplete": "Nous créons votre site web professionnel de A à Z. Design moderne, responsive, optimisé SEO et hébergement inclus pour 1 an. Parfait pour TPE et PME.",
-            "avantages": [
-                "Design 100% personnalisé",
-                "Responsive mobile/tablette/desktop",
-                "Hébergement 1 an offert",
-                "Formation à l'utilisation",
-                "Maintenance 3 mois incluse"
-            ],
-            "caracteristiques": [
-                {
-                    "nom": "Délai",
-                    "valeur": "15 jours"
-                },
-                {
-                    "nom": "Pages",
-                    "valeur": "Jusqu'à 7 pages"
-                },
-                {
-                    "nom": "Révisions",
-                    "valeur": "3 révisions incluses"
-                },
-                {
-                    "nom": "Technologies",
-                    "valeur": "HTML/CSS/JS moderne"
-                }
-            ],
-            "tags": [
-                "site web",
-                "développement",
-                "design",
-                "SEO"
-            ],
-            "messageWhatsapp": "Bonjour ! Je voudrais créer mon site web professionnel. Pouvons-nous discuter de mon projet ?",
-            "produitsLies": [
-                1,
-                5
-            ],
-            "dateAjout": "2024-02-01",
-            "vues": 0,
-            "commandes": 0
-        }
-    ],
-    "temoignages": [
-        {
-            "id": 1,
-            "nom": "Aminata K.",
-            "entreprise": "AK Cosmétiques",
-            "photo": "https://i.pravatar.cc/150?img=1",
-            "note": 5,
-            "texte": "Excellente formation ! J'ai triplé mon chiffre d'affaires en 3 mois grâce aux stratégies apprises.",
-            "produitId": 1
-        }
-    ],
-    "categories": [
-        {
-            "id": "formations",
-            "nom": "Formations",
-            "icone": "🎓",
-            "description": "Formations professionnelles en ligne"
-        },
-        {
-            "id": "coaching",
-            "nom": "Coaching",
-            "icone": "🎯",
-            "description": "Accompagnement personnalisé"
-        },
-        {
-            "id": "services",
-            "nom": "Services",
-            "icone": "💼",
-            "description": "Services sur-mesure pour votre business"
-        }
-    ],
-    "parametres": {
-        "produitsParPage": 6,
-        "produitsVedettesMax": 3,
-        "afficherPrix": true,
-        "afficherReduction": true,
-        "activerRecherche": true,
-        "activerFiltre": true,
-        "activerTri": true
+    "reseaux": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": ""
     }
+  },
+  "whatsapp": {
+    "numero": "2250574404978",
+    "messageDefaut": "Bonjour, je suis intéressé par : "
+  },
+  "seo": {
+    "titre": "Porte Bonheur - Formations & Services Premium",
+    "description": "Découvrez nos formations professionnelles et services de coaching pour réussir votre business",
+    "motsCles": "formation, coaching, business, développement personnel, Abidjan"
+  },
+  "produits": [
+    {
+      "id": 1,
+      "actif": true,
+      "vedette": true,
+      "nom": "Formation Marketing Digital",
+      "slug": "formation-marketing-digital",
+      "categorie": "formations",
+      "prix": 150000,
+      "devise": "FCFA",
+      "reduction": 0,
+      "images": [
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
+      ],
+      "descriptionCourte": "Maîtrisez les stratégies du marketing digital en 8 semaines",
+      "descriptionComplete": "Cette formation complète vous permettra de devenir un expert du marketing digital. Vous apprendrez les techniques avancées de SEO, publicité Facebook/Instagram, email marketing et création de contenu viral. Formation 100% pratique avec études de cas réels.",
+      "avantages": [
+        "Certification professionnelle reconnue",
+        "8 semaines de formation intensive",
+        "Suivi personnalisé par un mentor",
+        "Accès à vie aux ressources",
+        "Groupe privé d'entraide"
+      ],
+      "caracteristiques": [
+        { "nom": "Durée", "valeur": "8 semaines" },
+        { "nom": "Format", "valeur": "100% en ligne" },
+        { "nom": "Niveau", "valeur": "Débutant à Intermédiaire" },
+        { "nom": "Langue", "valeur": "Français" },
+        { "nom": "Support", "valeur": "Vidéos + PDF + Exercices" }
+      ],
+      "tags": ["marketing", "digital", "formation", "SEO", "publicité"],
+      "messageWhatsapp": "Bonjour ! Je suis intéressé par la Formation Marketing Digital à 150 000 FCFA. Pouvez-vous me donner plus d'informations ?",
+      "produitsLies": [2, 3],
+      "dateAjout": "2024-01-15",
+      "vues": 0,
+      "commandes": 0
+    },
+    {
+      "id": 2,
+      "actif": true,
+      "vedette": true,
+      "nom": "Coaching Business 1-to-1",
+      "slug": "coaching-business-1to1",
+      "categorie": "coaching",
+      "prix": 250000,
+      "devise": "FCFA",
+      "reduction": 10,
+      "images": [
+        "images/produits/coaching-1.jpg",
+        "images/produits/coaching-2.jpg"
+      ],
+      "descriptionCourte": "Accompagnement personnalisé pour développer votre entreprise",
+      "descriptionComplete": "Un accompagnement sur-mesure pour entrepreneurs ambitieux. En 12 sessions individuelles, nous travaillerons ensemble sur votre stratégie business, votre positionnement, votre offre et votre plan d'action. Résultats garantis ou remboursé.",
+      "avantages": [
+        "12 sessions individuelles de 90 minutes",
+        "Plan d'action personnalisé",
+        "Suivi par email illimité",
+        "Outils et templates exclusifs",
+        "Réseau d'entrepreneurs"
+      ],
+      "caracteristiques": [
+        { "nom": "Durée", "valeur": "3 mois" },
+        { "nom": "Sessions", "valeur": "12 x 90 minutes" },
+        { "nom": "Format", "valeur": "Visio ou présentiel" },
+        { "nom": "Disponibilité", "valeur": "Support 7j/7" }
+      ],
+      "tags": ["coaching", "business", "entrepreneur", "stratégie"],
+      "messageWhatsapp": "Bonjour ! Je souhaite en savoir plus sur le Coaching Business 1-to-1. Quand pouvons-nous planifier une première session ?",
+      "produitsLies": [1, 4],
+      "dateAjout": "2024-01-20",
+      "vues": 0,
+      "commandes": 0
+    },
+    {
+      "id": 3,
+      "actif": true,
+      "vedette": true,
+      "nom": "Pack Création de Site Web",
+      "slug": "pack-creation-site-web",
+      "categorie": "services",
+      "prix": 500000,
+      "devise": "FCFA",
+      "reduction": 0,
+      "images": [
+        "images/produits/site-web-1.jpg"
+      ],
+      "descriptionCourte": "Site web professionnel clé en main en 15 jours",
+      "descriptionComplete": "Nous créons votre site web professionnel de A à Z. Design moderne, responsive, optimisé SEO et hébergement inclus pour 1 an. Parfait pour TPE et PME.",
+      "avantages": [
+        "Design 100% personnalisé",
+        "Responsive mobile/tablette/desktop",
+        "Hébergement 1 an offert",
+        "Formation à l'utilisation",
+        "Maintenance 3 mois incluse"
+      ],
+      "caracteristiques": [
+        { "nom": "Délai", "valeur": "15 jours" },
+        { "nom": "Pages", "valeur": "Jusqu'à 7 pages" },
+        { "nom": "Révisions", "valeur": "3 révisions incluses" },
+        { "nom": "Technologies", "valeur": "HTML/CSS/JS moderne" }
+      ],
+      "tags": ["site web", "développement", "design", "SEO"],
+      "messageWhatsapp": "Bonjour ! Je voudrais créer mon site web professionnel. Pouvons-nous discuter de mon projet ?",
+      "produitsLies": [1, 5],
+      "dateAjout": "2024-02-01",
+      "vues": 0,
+      "commandes": 0
+    }
+  ],
+  "temoignages": [
+    {
+      "id": 1,
+      "nom": "Aminata K.",
+      "entreprise": "AK Cosmétiques",
+      "photo": "https://i.pravatar.cc/150?img=1",
+      "note": 5,
+      "texte": "Excellente formation ! J'ai triplé mon chiffre d'affaires en 3 mois grâce aux stratégies apprises.",
+      "produitId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "formations",
+      "nom": "Formations",
+      "icone": "🎓",
+      "description": "Formations professionnelles en ligne"
+    },
+    {
+      "id": "coaching",
+      "nom": "Coaching",
+      "icone": "🎯",
+      "description": "Accompagnement personnalisé"
+    },
+    {
+      "id": "services",
+      "nom": "Services",
+      "icone": "💼",
+      "description": "Services sur-mesure pour votre business"
+    }
+  ],
+  "parametres": {
+    "produitsParPage": 6,
+    "produitsVedettesMax": 3,
+    "afficherPrix": true,
+    "afficherReduction": true,
+    "activerRecherche": true,
+    "activerFiltre": true,
+    "activerTri": true
+  }
 }
