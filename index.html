@@ -6,99 +6,55 @@
   <meta name="description" content="Porte Bonheur - Formations professionnelles et services de coaching pour réussir votre business">
   <meta name="keywords" content="formation, coaching, business, développement personnel, Abidjan">
   <meta name="author" content="Porte Bonheur">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Porte Bonheur - Votre succès est notre mission">
   <meta property="og:description" content="Découvrez nos formations professionnelles et services de coaching">
   <meta property="og:image" content="images/og-image.jpg">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Porte Bonheur">
-  <meta property="twitter:description" content="Formations et coaching pour entrepreneurs">
-  
+
   <title>Porte Bonheur - Accueil</title>
-  
+
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  
+  <link rel="icon" href="images/favicon.ico">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <!-- Rempli dynamiquement par JavaScript -->
-  </header>
+  <header class="header"></header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <!-- Rempli dynamiquement par JavaScript -->
-  </section>
+  <section class="hero"></section>
 
-  <!-- PRODUITS VEDETTES -->
-  <section class="section" id="produits-vedettes">
-    <!-- Rempli dynamiquement par JavaScript -->
-  </section>
+  <section class="section" id="produits-vedettes"></section>
 
-  <!-- TÉMOIGNAGES -->
-  <section class="section" id="temoignages" style="background: white;">
-    <!-- Rempli dynamiquement par JavaScript -->
-  </section>
+  <section class="section" id="temoignages" style="background: white;"></section>
 
-  <!-- CTA SECTION -->
   <section class="section" id="contact" style="background: linear-gradient(135deg, #2563eb, #7c3aed); color: white;">
     <div class="container text-center">
-      <div class="animate-on-scroll">
-        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Prêt à démarrer ?</h2>
-        <p style="font-size: 1.25rem; margin-bottom: 40px; opacity: 0.95;">
-          Contactez-nous dès maintenant et transformez votre projet en succès
-        </p>
-        <div class="flex gap-20" style="justify-content: center; flex-wrap: wrap;">
-          <a href="catalogue.html" class="btn btn-secondary">
-            📚 Voir le catalogue
-          </a>
-          <a href="#" id="cta-whatsapp" class="btn" style="background: #25D366; color: white;">
-            💬 Contacter sur WhatsApp
-          </a>
-        </div>
+      <h2>Prêt à démarrer ?</h2>
+      <p>Contactez-nous dès maintenant et transformez votre projet en succès</p>
+      <div>
+        <a href="catalogue.html" class="btn btn-secondary">📚 Voir le catalogue</a>
+        <a href="#" id="cta-whatsapp" class="btn" style="background:#25D366;color:white">
+          💬 Contacter sur WhatsApp
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <!-- Rempli dynamiquement par JavaScript -->
-  </footer>
+  <footer class="footer"></footer>
 
   <!-- Scripts -->
   <script src="js/utils.js"></script>
   <script src="js/site.js"></script>
-  
-  <script>
-    // Mettre à jour le lien WhatsApp du CTA
-    document.addEventListener('DOMContentLoaded', async () => {
-      // Attendre que dataManager soit prêt
-      setTimeout(() => {
-        if (dataManager && dataManager.data) {
-          const ctaWhatsapp = document.getElementById('cta-whatsapp');
-          if (ctaWhatsapp) {
-            ctaWhatsapp.href = Utils.genererLienWhatsApp(
-              dataManager.data.whatsapp.numero, 
-              'Bonjour ! Je suis intéressé par vos services. Pouvez-vous m\'en dire plus ?'
-            );
-          }
-        }
-      }, 500);
-    });
-  </script>
 
 </body>
 </html>
