@@ -1,64 +1,104 @@
-// utils.js
+// ==========================================
+// UTILS.JS - FONCTIONS GLOBALES & DATA MANAGER
+// ==========================================
 
-// Fonction pour charger le JSON de manière sécurisée
-async function chargerDonnees() {
-  try {
-    const response = await fetch('data.json', { cache: "no-store" }); 
-    // no-store empêche le cache de corrompre le JSON
-    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-    
-    // Lire le texte brut d'abord pour debug si JSON invalide
-    const texte = await response.text();
+/* =========================
+   UTILS (GLOBAL)
+========================= */
+window.Utils = {
+  afficherLoader(show) {
+    let loader = document.getElementById('global-loader');
+    if (!loader) {
+      loader = document.createElement('div');
+      loader.id = 'global-loader';
+      loader.style = `
+        position: fixed;
+        inset: 0;
+        background: rgba(255,255,255,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        font-size: 1.2rem;
+      `;
+      loader.innerHTML = 'Chargement...';
+      document.body.appendChild(loader);
+    }
+    loader.style.display = show ? 'flex' : 'none';
+  },
 
-    // Essayer de parser le JSON
-    let data;
+  afficherToast(message, type = 'info') {
+    alert(message);
+  },
+
+  calculerPrixReduit(prix, reduction = 0) {
+    return Math.round(prix - (prix * reduction / 100));
+  },
+
+  formaterPrix(prix, devise = 'FCFA') {
+    return `${prix.toLocaleString()} ${devise}`;
+  },
+
+  tronquer(texte, longueur = 100) {
+    if (!texte) return '';
+    return texte.length > longueur ? texte.substring(0, longueur) + '...' : texte;
+  },
+
+  genererLienWhatsApp(numero, message) {
+    return `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
+  },
+
+  getParamsUrl() {
+    return Object.fromEntries(new URLSearchParams(window.location.search));
+  },
+
+  afficherEtoiles(note) {
+    return '★'.repeat(note) + '☆'.repeat(5 - note);
+  },
+
+  copierTexte(texte) {
+    navigator.clipboard.writeText(texte);
+    this.afficherToast('Lien copié');
+  }
+};
+
+/* =========================
+   DATA MANAGER (GLOBAL)
+========================= */
+class DataManager {
+  constructor() {
+    this.data = null;
+  }
+
+  async chargerDonnees() {
     try {
-      data = JSON.parse(texte);
-    } catch(parseErr) {
-      console.error("Erreur JSON.parse:", parseErr);
-      console.log("Contenu reçu :", texte);
-      throw parseErr;
-    }
+      const response = await fetch('data/data.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error('Erreur HTTP ' + response.status);
 
-    return data;
-  } catch (err) {
-    console.error("Impossible de charger les données :", err);
-    throw err;
+      this.data = await response.json();
+      return this.data;
+    } catch (err) {
+      console.error('Erreur chargement JSON :', err);
+      throw err;
+    }
+  }
+
+  getProduitParId(id) {
+    return this.data?.produits.find(p => p.id === id);
+  }
+
+  getProduitsVedettes(limit = 3) {
+    return this.data?.produits.filter(p => p.vedette).slice(0, limit);
+  }
+
+  getProduitsLies(produitId, limit = 3) {
+    const produit = this.getProduitParId(produitId);
+    if (!produit) return [];
+    return this.data.produits
+      .filter(p => p.categorie === produit.categorie && p.id !== produitId)
+      .slice(0, limit);
   }
 }
 
-// Exemple d'utilisation
-async function initialiserSite() {
-  try {
-    const data = await chargerDonnees();
-    console.log("JSON chargé avec succès :", data);
-
-    // Exemple : afficher les produits sur la page
-    const container = document.getElementById('products');
-    if (container && data.produits) {
-      container.innerHTML = "";
-      data.produits.forEach(produit => {
-        const div = document.createElement('div');
-        div.innerHTML = `
-          <h3>${produit.nom}</h3>
-          <p>${produit.descriptionCourte}</p>
-          <p><strong>Prix :</strong> ${produit.prix} ${produit.devise}</p>
-        `;
-        container.appendChild(div);
-      });
-    }
-
-  } catch (err) {
-    console.error("Erreur d'initialisation :", err);
-    // Ici, tu peux afficher un message utilisateur
-    const container = document.getElementById('products');
-    if (container) {
-      container.innerHTML = "<p>Impossible de charger les produits. Veuillez réessayer plus tard.</p>";
-    }
-  }
-}
-
-// Initialiser quand le DOM est prêt
-document.addEventListener('DOMContentLoaded', () => {
-  initialiserSite();
-});
+// INSTANCE GLOBALE
+window.dataManager = new DataManager();
